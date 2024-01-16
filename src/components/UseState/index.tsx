@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./UseState.css";
 
-const UseState = () => {
-  const [theme, setTheme] = useState("dark");
-  const [count, setCount] = useState(0);
+const UseState: React.FC = () => {
+  const [theme, setTheme] = useState<string>("dark");
+  const [count, setCount] = useState<number>(0);
 
   return (
     <div className={`state ${theme}`}>
